@@ -46,7 +46,8 @@
   <p>Uygulama kapalıyken de Canlı Etkinlik ve Kritik Uyarı gösterilebilmesi için yalnızca cihazın anonim push token'ı, rastgele bir hatırlatıcı kimliği ve doz saati geçici olarak sunucuya iletilir. <strong>İlaç adı sunucuya gönderilmez</strong>; bildirimde görünen ilaç adı cihazınızda eklenir. Bu kayıtlar hatırlatıcı sona erdiğinde otomatik silinir.</p>
 
   <h3>b) Kamera ile Etiket Okuma</h3>
-  <p>Reçete veya ilaç etiketini kamerayla okuttuğunuzda, metnin doğru okunabilmesi için fotoğraf bazı durumlarda sunucumuz üzerinden Google'ın Gemini yapay zekâ hizmetine gönderilir. Fotoğraf yalnızca okuma için işlenir, tarafımızdan saklanmaz. Barkod okuma tamamen cihazınızda yapılır.</p>
+  <p>Reçete veya ilaç etiketini kamerayla ya da galeriden okuttuğunuzda, metnin doğru okunabilmesi için fotoğraf bazı durumlarda sunucumuz üzerinden Google'ın Gemini yapay zekâ hizmetine gönderilir. Bu özellik ancak uygulama içinde bu bilgilendirmeyi okuyup onay verdikten sonra kullanılabilir. Fotoğraf tarafımızdan saklanmaz. Barkod okuma tamamen cihazınızda yapılır.</p>
+  <p>Bu hizmeti Google'ın ücretsiz kullanım koşullarıyla kullanıyoruz. Bu koşullar gereği Google, gönderilen fotoğrafları ve okunan metni kendi ürün ve hizmetlerini (yapay zekâ modelleri dâhil) geliştirmek için kullanabilir; bu içerikler Google'daki insan değerlendiriciler tarafından da incelenebilir. Bu nedenle etikette adınız, T.C. kimlik numaranız veya reçete numaranız gibi bilgiler varsa fotoğrafı çekmeden önce bunları kapatmanızı öneririz. Ayrıntılar: <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Ek Hizmet Şartları</a>.</p>
 
   <h3>c) Bakım Çemberi</h3>
   <p>Planınızı bir yakınınızla paylaştığınızda plan ayrıntıları (ilaç adı, saatler vb.) QR kod veya paylaşım kodu ile doğrudan cihazdan cihaza aktarılır. Canlı takip için sunucuya yalnızca rastgele bir plan referansı, doz saatleri, dozun alındı/atlandı durumu, cihazın push token'ı, platformu, saat dilimi ve dili iletilir. İlaç adı, tanı veya not sunucuya gönderilmez.</p>
@@ -75,7 +76,7 @@
   <ul>
     <li><strong>Supabase:</strong> Sunucu altyapısı (4. bölümdeki veriler).</li>
     <li><strong>Google AdMob:</strong> Reklamlar (6. bölüm).</li>
-    <li><strong>Google Gemini:</strong> Etiket okuma (4-b).</li>
+    <li><strong>Google Gemini:</strong> Etiket okuma; içerik Google tarafından hizmet geliştirme amacıyla kullanılabilir (4-b).</li>
     <li><strong>Firebase Cloud Messaging ve Apple Push Bildirim Servisi:</strong> Bildirim iletimi.</li>
     <li><strong>OpenFreeMap:</strong> Harita görselleri (4-d).</li>
   </ul>

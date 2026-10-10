@@ -46,7 +46,8 @@
   <p>So that Live Activities and Critical Alerts can be shown even when the app is closed, only the device's anonymous push token, a random reminder ID and the dose time are temporarily sent to the server. <strong>The medication name is not sent to the server</strong>; the name shown in the notification is added on your device. These records are deleted automatically when the reminder ends.</p>
 
   <h3>b) Label Reading with the Camera</h3>
-  <p>When you scan a prescription or medicine label with the camera, the photo may in some cases be sent through our server to Google's Gemini AI service so that the text can be read correctly. The photo is processed only for reading and is not stored by us. Barcode scanning happens entirely on your device.</p>
+  <p>When you scan a prescription or medicine label with the camera or from your gallery, the photo may in some cases be sent through our server to Google's Gemini AI service so that the text can be read correctly. This feature can only be used after you read this notice in the app and give your consent. The photo is not stored by us. Barcode scanning happens entirely on your device.</p>
+  <p>We use this service under Google's unpaid (free) terms. Under these terms Google may use the submitted photos and the extracted text to provide, improve and develop its products and services (including AI models), and this content may be read by human reviewers at Google. For this reason, if the label shows your name, national ID number or prescription number, we recommend covering them before taking the photo. Details: <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Additional Terms of Service</a>.</p>
 
   <h3>c) Care Circle</h3>
   <p>When you share a plan with someone close to you, the plan details (medication name, times, etc.) are transferred directly from device to device by QR code or share code. For live follow-up, only a random plan reference, dose times, whether a dose was taken or skipped, and the device's push token, platform, time zone and language are sent to the server. No medication name, diagnosis or note is sent to the server.</p>
@@ -75,7 +76,7 @@
   <ul>
     <li><strong>Supabase:</strong> server infrastructure (the data in Section 4).</li>
     <li><strong>Google AdMob:</strong> advertising (Section 6).</li>
-    <li><strong>Google Gemini:</strong> label reading (4-b).</li>
+    <li><strong>Google Gemini:</strong> label reading; content may be used by Google to improve its services (4-b).</li>
     <li><strong>Firebase Cloud Messaging and Apple Push Notification service:</strong> delivering notifications.</li>
     <li><strong>OpenFreeMap:</strong> map images (4-d).</li>
   </ul>
