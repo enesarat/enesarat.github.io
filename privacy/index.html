@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hapşu Gizlilik Politikası</title>
+<link rel="icon" href="../icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../policy.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a href="../"><img class="logo" src="../logo.png" alt="Hapşu"></a>
+    <nav class="lang"><a href="./" aria-current="page">TR</a><a href="en/">EN</a></nav>
+  </div>
+
+  <h1>Hapşu için gizlilik politikası</h1>
+  <p class="date">Son Güncelleme: Ekim 2026</p>
+
+  <p>Enes Arat ("biz", "bizi" veya "bizim"), Hapşu mobil uygulamasını ("Hizmet") işletmektedir.</p>
+  <p>Bu sayfa, Hizmetimizi kullandığınızda verilerin toplanması, kullanımı ve ifşası ile ilgili politikalarımız hakkında sizi bilgilendirmeyi amaçlamaktadır.</p>
+
+  <h2>1. Hesap Gereksinimi Yok ve Anonimlik</h2>
+  <p>Gizliliğinize büyük önem veriyoruz. Hapşu'yu kullanmak için herhangi bir hesap oluşturmanız gerekmez. Adınız, e-posta adresiniz veya telefon numaranız gibi kişisel olarak tanımlanabilir bilgileri toplamıyor, saklamıyor veya talep etmiyoruz. Profil sayfasına isteğe bağlı olarak girdiğiniz bilgiler yalnızca cihazınızda kalır.</p>
+
+  <h2>2. Sağlık ve İlaç Verileri (Yerel Depolama)</h2>
+  <p>Hapşu, ilaç programlarınızı ve sağlık kayıtlarınızı (ör. tansiyon, kan şekeri) takip etmenizi sağlar. İlaç verileriniz, planlarınız, doz geçmişiniz, sağlık ölçümleriniz ve oluşturduğunuz sağlık raporları cihazınızda (lokal olarak) saklanır. Bu verileri bir hesapta toplamıyor, bulutta yedeklemiyor veya eşitlemiyoruz. Belirli özelliklerin çalışabilmesi için sunucularımıza iletilen sınırlı veriler 4. bölümde tek tek açıklanmıştır.</p>
+
+  <h2>3. İzinler</h2>
+  <p>Hapşu yalnızca ilgili özelliği kullandığınızda aşağıdaki izinleri ister. İzin vermemeniz uygulamanın geri kalanını kullanmanızı engellemez.</p>
+  <ul>
+    <li><strong>Bildirimler ve Alarmlar</strong> (Zamana Duyarlı "Kritik Bildirimler" ve Canlı Etkinlikler dâhil): İlaç hatırlatıcılarınızı doğru zamanda göstermek için.</li>
+    <li><strong>Kamera:</strong> İlaç kutusu barkodunu veya reçete/ilaç etiketini okumak ve Bakım Çemberi QR kodunu taramak için.</li>
+    <li><strong>Fotoğraflar:</strong> Galeriden etiket fotoğrafı veya profil fotoğrafı seçmek için.</li>
+    <li><strong>Konum:</strong> Haritada size yakın eczaneleri göstermek için. Konumunuz cihazınızda kullanılır, sunucularımıza gönderilmez.</li>
+    <li><strong>İzleme (yalnızca iOS):</strong> Reklamların kişiselleştirilmesine izin verip vermeyeceğinizi sormak için (bkz. 6. bölüm).</li>
+  </ul>
+
+  <h2>4. Sunucularımıza İletilen Veriler</h2>
+  <p>Kişisel profiller toplamıyor olsak da, bazı özellikleri sunmak için güvenli bir bulut altyapısı (Supabase) kullanıyoruz. Bu verilerin hiçbiri adınız, e-postanız veya telefon numaranızla eşleştirilmez.</p>
+
+  <h3>a) Hatırlatıcılar, Canlı Etkinlikler ve Kritik Uyarılar (yalnızca iOS)</h3>
+  <p>Uygulama kapalıyken de Canlı Etkinlik ve Kritik Uyarı gösterilebilmesi için yalnızca cihazın anonim push token'ı, rastgele bir hatırlatıcı kimliği ve doz saati geçici olarak sunucuya iletilir. <strong>İlaç adı sunucuya gönderilmez</strong>; bildirimde görünen ilaç adı cihazınızda eklenir. Bu kayıtlar hatırlatıcı sona erdiğinde otomatik silinir.</p>
+
+  <h3>b) Kamera ile Etiket Okuma</h3>
+  <p>Reçete veya ilaç etiketini kamerayla okuttuğunuzda, metnin doğru okunabilmesi için fotoğraf bazı durumlarda sunucumuz üzerinden Google'ın Gemini yapay zekâ hizmetine gönderilir. Fotoğraf yalnızca okuma için işlenir, tarafımızdan saklanmaz. Barkod okuma tamamen cihazınızda yapılır.</p>
+
+  <h3>c) Bakım Çemberi</h3>
+  <p>Planınızı bir yakınınızla paylaştığınızda plan ayrıntıları (ilaç adı, saatler vb.) QR kod veya paylaşım kodu ile doğrudan cihazdan cihaza aktarılır. Canlı takip için sunucuya yalnızca rastgele bir plan referansı, doz saatleri, dozun alındı/atlandı durumu, cihazın push token'ı, platformu, saat dilimi ve dili iletilir. İlaç adı, tanı veya not sunucuya gönderilmez.</p>
+
+  <h3>d) Nöbetçi Eczaneler</h3>
+  <p>Nöbetçi eczane listesi için yalnızca seçtiğiniz il ve ilçe bilgisi sunucumuza gönderilir. Harita görselleri OpenFreeMap üzerinden yüklenir; bu hizmet, standart internet trafiğinin parçası olarak IP adresinizi ve görüntülenen harita bölgesini görebilir.</p>
+
+  <h3>e) Geri Bildirim</h3>
+  <p>Uygulama içinden bize gönderdiğiniz geri bildirim metni, isteğe bağlı olarak yazdığınız isim, platform ve uygulama sürümüyle birlikte sunucularımıza güvenli bir şekilde iletilir.</p>
+
+  <h2>5. Veri Saklama ve Güvenlik</h2>
+  <p>Yerel verilerinizin ve sunucularımıza iletilen sınırlı teknik verilerin güvenliği bizim için son derece önemlidir. Sunucuyla tüm iletişim şifreli bağlantı (HTTPS) üzerinden yapılır. Uygulamayı işletmek için yalnızca güvenilir ve gerekli hizmetleri kullanıyoruz.</p>
+
+  <h2>6. Reklamlar</h2>
+  <p>Hapşu ücretsiz kalabilmek için Google AdMob aracılığıyla reklam gösterir. Reklamlar yalnızca ilaç kaydı, ölçüm kaydı veya plan oluşturma gibi bir işlem tamamlandıktan sonra ya da kamera, barkod ve rapor gibi özelliklerin ücretsiz kullanım hakkı bittiğinde isteğe bağlı ödüllü reklam olarak gösterilir. Hatırlatıcılar ve bildirimler hiçbir zaman reklama bağlı değildir.</p>
+  <p>Google, reklamları sunmak, ölçmek ve kötüye kullanımı önlemek için cihazınızın reklam kimliğini, IP adresini ve cihaz bilgilerini işleyebilir. Sağlık ve ilaç verileriniz reklam sağlayıcılarıyla <strong>hiçbir şekilde paylaşılmaz</strong>.</p>
+  <ul>
+    <li><strong>iOS:</strong> Reklam kimliği (IDFA) yalnızca "Uygulamadan izleme yapmamasını iste" yerine izin verdiğinizde kullanılır. İzni istediğiniz zaman <em>Ayarlar → Gizlilik ve Güvenlik → İzleme</em> bölümünden değiştirebilirsiniz.</li>
+    <li><strong>Android:</strong> Reklam kimliğinizi <em>Ayarlar → Google → Reklamlar</em> bölümünden sıfırlayabilir veya silebilirsiniz.</li>
+    <li><strong>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre:</strong> Kişiselleştirilmiş reklamlar için uygulama içinde Google'ın onay formuyla izniniz istenir.</li>
+  </ul>
+  <p>Google'ın verileri nasıl kullandığı hakkında: <a href="https://policies.google.com/technologies/partner-sites?hl=tr" target="_blank" rel="noopener">Google iş ortaklarının sitelerini veya uygulamalarını kullanmanız</a>.</p>
+
+  <h2>7. Üçüncü Taraflar</h2>
+  <p>Verilerinizi kimseye satmıyoruz. Hizmeti sunmak için yalnızca şu hizmet sağlayıcılarını kullanıyoruz:</p>
+  <ul>
+    <li><strong>Supabase:</strong> Sunucu altyapısı (4. bölümdeki veriler).</li>
+    <li><strong>Google AdMob:</strong> Reklamlar (6. bölüm).</li>
+    <li><strong>Google Gemini:</strong> Etiket okuma (4-b).</li>
+    <li><strong>Firebase Cloud Messaging ve Apple Push Bildirim Servisi:</strong> Bildirim iletimi.</li>
+    <li><strong>OpenFreeMap:</strong> Harita görselleri (4-d).</li>
+  </ul>
+
+  <h2>8. Çocukların Gizliliği</h2>
+  <p>Hapşu 13 yaşın altındaki çocuklara yönelik değildir ve bilerek çocuklardan veri toplamaz.</p>
+
+  <h2>9. Verilerinizin Silinmesi</h2>
+  <p>Hapşu'da saklanan verilerinizi aşağıdaki yöntemlerle silebilirsiniz:</p>
+  <h3>a) Cihazınızdaki Yerel Veriler</h3>
+  <p>Aşağıdaki veri türleri yalnızca cihazınızda saklanır ve doğrudan uygulama içinden silinebilir:</p>
+  <ul>
+    <li>Kişisel bilgiler (ad, e-posta, telefon, adres): Profil sayfasından düzenleyerek temizleyebilirsiniz.</li>
+    <li>İlaç kayıtları ve planları: Her ilacı tek tek silebilirsiniz.</li>
+    <li>Doz geçmişi (alındı/atlandı logları): İlgili ilaç silindiğinde otomatik temizlenir.</li>
+    <li>Profil fotoğrafı: Profil sayfasından kaldırabilirsiniz.</li>
+    <li>Tüm uygulama verileri: Uygulamayı cihazınızdan kaldırmak tüm yerel veriyi kalıcı olarak siler.</li>
+  </ul>
+  <h3>b) Sunucuda Saklanan Veriler</h3>
+  <p>Aşağıdaki veriler sunucularımızda geçici olarak saklanabilir:</p>
+  <ul>
+    <li>Hatırlatıcı kayıtları ve push bildirim token'ları (iOS): İlgili hatırlatıcı sona erdiğinde otomatik silinir.</li>
+    <li>Bakım Çemberi kayıtları: Paylaşımı uygulama içinden sonlandırabilirsiniz; kalan kayıtların silinmesini e-postayla talep edebilirsiniz.</li>
+    <li>Geri bildirim metinleri: Talep üzerine silinir.</li>
+  </ul>
+  <p>Sunucudaki verilerinizin silinmesini talep etmek için <a href="mailto:artcodens@gmail.com">artcodens@gmail.com</a> adresine e-posta gönderebilirsiniz. Silme talebiniz en geç 30 gün içinde işleme alınır.</p>
+
+  <h2>10. Bu Gizlilik Politikasındaki Değişiklikler</h2>
+  <p>Gizlilik Politikamızı zaman zaman güncelleyebiliriz. Yeni Gizlilik Politikasını bu sayfada yayınlayarak herhangi bir değişiklikten sizi haberdar edeceğiz.</p>
+
+  <h2>11. İletişim</h2>
+  <p>Bu Gizlilik Politikası hakkında sorularınız varsa, lütfen e-posta yoluyla bize ulaşın: <a href="mailto:artcodens@gmail.com">artcodens@gmail.com</a></p>
+
+  <footer><a class="brand" href="../">artcodens</a></footer>
+</div>
+</body>
+</html>
