@@ -35,6 +35,7 @@
     <li><strong>Notifications and Alarms</strong> (including time-sensitive "Critical Alerts" and Live Activities): to show your medication reminders at the right time.</li>
     <li><strong>Camera:</strong> to read a medicine box barcode or a prescription/medicine label, and to scan Care Circle QR codes.</li>
     <li><strong>Photos:</strong> to pick a profile photo from your gallery.</li>
+    <li><strong>Calendar:</strong> to add your doctor's appointment to your device's calendar.</li>
     <li><strong>Location:</strong> to show pharmacies near you on the map. Your location is used on your device and is not sent to our servers.</li>
     <li><strong>Tracking (iOS only):</strong> to ask whether you allow personalized ads (see Section 6).</li>
   </ul>
@@ -43,7 +44,7 @@
   <p>While we do not collect personal profiles, we use a secure cloud backend (Supabase) to deliver some features. None of this data is linked to your name, email address or phone number.</p>
 
   <h3>a) Reminders, Live Activities and Critical Alerts (iOS only)</h3>
-  <p>So that Live Activities and Critical Alerts can be shown even when the app is closed, only the device's anonymous push token, a random reminder ID and the dose time are temporarily sent to the server. <strong>The medication name is not sent to the server</strong>; the name shown in the notification is added on your device. These records are deleted automatically when the reminder ends.</p>
+  <p>So that Live Activities and Critical Alerts can be shown even when the app is closed, only the device's anonymous push token, an internal ID number the app assigns to the medication (it contains no information about the medication) and the dose time are temporarily sent to the server. <strong>The medication name is not sent to the server</strong>; the name shown in the notification is added on your device. These records are deleted automatically when the reminder ends.</p>
 
   <h3>b) Label Reading with the Camera</h3>
   <p>The first time you scan a prescription or medicine label with the camera, the app asks how the label should be read:</p>

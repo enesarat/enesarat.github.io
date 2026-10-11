@@ -35,6 +35,7 @@
     <li><strong>Bildirimler ve Alarmlar</strong> (Zamana Duyarlı "Kritik Bildirimler" ve Canlı Etkinlikler dâhil): İlaç hatırlatıcılarınızı doğru zamanda göstermek için.</li>
     <li><strong>Kamera:</strong> İlaç kutusu barkodunu veya reçete/ilaç etiketini okumak ve Bakım Çemberi QR kodunu taramak için.</li>
     <li><strong>Fotoğraflar:</strong> Galeriden profil fotoğrafı seçmek için.</li>
+    <li><strong>Takvim:</strong> Doktor randevunuzu cihazınızın takvimine eklemek için.</li>
     <li><strong>Konum:</strong> Haritada size yakın eczaneleri göstermek için. Konumunuz cihazınızda kullanılır, sunucularımıza gönderilmez.</li>
     <li><strong>İzleme (yalnızca iOS):</strong> Reklamların kişiselleştirilmesine izin verip vermeyeceğinizi sormak için (bkz. 6. bölüm).</li>
   </ul>
@@ -43,7 +44,7 @@
   <p>Kişisel profiller toplamıyor olsak da, bazı özellikleri sunmak için güvenli bir bulut altyapısı (Supabase) kullanıyoruz. Bu verilerin hiçbiri adınız, e-postanız veya telefon numaranızla eşleştirilmez.</p>
 
   <h3>a) Hatırlatıcılar, Canlı Etkinlikler ve Kritik Uyarılar (yalnızca iOS)</h3>
-  <p>Uygulama kapalıyken de Canlı Etkinlik ve Kritik Uyarı gösterilebilmesi için yalnızca cihazın anonim push token'ı, rastgele bir hatırlatıcı kimliği ve doz saati geçici olarak sunucuya iletilir. <strong>İlaç adı sunucuya gönderilmez</strong>; bildirimde görünen ilaç adı cihazınızda eklenir. Bu kayıtlar hatırlatıcı sona erdiğinde otomatik silinir.</p>
+  <p>Uygulama kapalıyken de Canlı Etkinlik ve Kritik Uyarı gösterilebilmesi için yalnızca cihazın anonim push token'ı, uygulamanın ilaca verdiği ve ilaç hakkında bilgi içermeyen bir kimlik numarası ve doz saati geçici olarak sunucuya iletilir. <strong>İlaç adı sunucuya gönderilmez</strong>; bildirimde görünen ilaç adı cihazınızda eklenir. Bu kayıtlar hatırlatıcı sona erdiğinde otomatik silinir.</p>
 
   <h3>b) Kamera ile Etiket Okuma</h3>
   <p>Reçete veya ilaç etiketini kamerayla ilk kez okutmak istediğinizde, uygulama etiketin nasıl okunacağını sorar:</p>
