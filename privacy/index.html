@@ -34,7 +34,7 @@
   <ul>
     <li><strong>Bildirimler ve Alarmlar</strong> (Zamana Duyarlı "Kritik Bildirimler" ve Canlı Etkinlikler dâhil): İlaç hatırlatıcılarınızı doğru zamanda göstermek için.</li>
     <li><strong>Kamera:</strong> İlaç kutusu barkodunu veya reçete/ilaç etiketini okumak ve Bakım Çemberi QR kodunu taramak için.</li>
-    <li><strong>Fotoğraflar:</strong> Galeriden etiket fotoğrafı veya profil fotoğrafı seçmek için.</li>
+    <li><strong>Fotoğraflar:</strong> Galeriden profil fotoğrafı seçmek için.</li>
     <li><strong>Konum:</strong> Haritada size yakın eczaneleri göstermek için. Konumunuz cihazınızda kullanılır, sunucularımıza gönderilmez.</li>
     <li><strong>İzleme (yalnızca iOS):</strong> Reklamların kişiselleştirilmesine izin verip vermeyeceğinizi sormak için (bkz. 6. bölüm).</li>
   </ul>
@@ -46,7 +46,12 @@
   <p>Uygulama kapalıyken de Canlı Etkinlik ve Kritik Uyarı gösterilebilmesi için yalnızca cihazın anonim push token'ı, rastgele bir hatırlatıcı kimliği ve doz saati geçici olarak sunucuya iletilir. <strong>İlaç adı sunucuya gönderilmez</strong>; bildirimde görünen ilaç adı cihazınızda eklenir. Bu kayıtlar hatırlatıcı sona erdiğinde otomatik silinir.</p>
 
   <h3>b) Kamera ile Etiket Okuma</h3>
-  <p>Reçete veya ilaç etiketini kamerayla ya da galeriden okuttuğunuzda, metnin doğru okunabilmesi için fotoğraf bazı durumlarda sunucumuz üzerinden Google'ın Gemini yapay zekâ hizmetine gönderilir. Bu özellik ancak uygulama içinde bu bilgilendirmeyi okuyup onay verdikten sonra kullanılabilir. Fotoğraf tarafımızdan saklanmaz. Barkod okuma tamamen cihazınızda yapılır.</p>
+  <p>Reçete veya ilaç etiketini kamerayla ilk kez okutmak istediğinizde, uygulama etiketin nasıl okunacağını sorar:</p>
+  <ul>
+    <li><strong>Sadece cihazda:</strong> Fotoğraf cihazınızdan hiç çıkmaz; metin cihazınızda okunur ve hiçbir veri sunucumuza ya da Google'a gönderilmez.</li>
+    <li><strong>Akıllı okuma:</strong> Okuma yine önce cihazınızda yapılır. Cihazdaki okuma yetmediğinde (ör. stilize marka adı, el yazısı ya da katlanmış etiket) fotoğraf, metnin doğru okunabilmesi için sunucumuz üzerinden Google'ın Gemini yapay zekâ hizmetine gönderilir. Bu mod ancak uygulama içinde bu bilgilendirmeyi okuyup onay verdikten sonra kullanılabilir.</li>
+  </ul>
+  <p>Seçiminiz hatırlanır; kamera ekranının üstünden ya da menüdeki <em>Etiket okuma</em> bölümünden istediğiniz zaman değiştirebilirsiniz. Akıllı okuma onayınızı aynı bölümden geri alabilirsiniz; geri aldığınızda etiketler yalnızca cihazınızda okunur ve hiçbir fotoğraf gönderilmez. Kamerayı kullanmadan ilacınızı elle de ekleyebilirsiniz. Fotoğraf tarafımızdan saklanmaz. Barkod okuma tamamen cihazınızda yapılır.</p>
   <p>Bu hizmeti Google'ın ücretsiz kullanım koşullarıyla kullanıyoruz. Bu koşullar gereği Google, gönderilen fotoğrafları ve okunan metni kendi ürün ve hizmetlerini (yapay zekâ modelleri dâhil) geliştirmek için kullanabilir; bu içerikler Google'daki insan değerlendiriciler tarafından da incelenebilir. Bu nedenle etikette adınız, T.C. kimlik numaranız veya reçete numaranız gibi bilgiler varsa fotoğrafı çekmeden önce bunları kapatmanızı öneririz. Ayrıntılar: <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Ek Hizmet Şartları</a>.</p>
 
   <h3>c) Bakım Çemberi</h3>
@@ -76,7 +81,7 @@
   <ul>
     <li><strong>Supabase:</strong> Sunucu altyapısı (4. bölümdeki veriler).</li>
     <li><strong>Google AdMob:</strong> Reklamlar (6. bölüm).</li>
-    <li><strong>Google Gemini:</strong> Etiket okuma; içerik Google tarafından hizmet geliştirme amacıyla kullanılabilir (4-b).</li>
+    <li><strong>Google Gemini:</strong> Yalnızca onay verdiğiniz akıllı okuma modunda etiket okuma; içerik Google tarafından hizmet geliştirme amacıyla kullanılabilir (4-b).</li>
     <li><strong>Firebase Cloud Messaging ve Apple Push Bildirim Servisi:</strong> Bildirim iletimi.</li>
     <li><strong>OpenFreeMap:</strong> Harita görselleri (4-d).</li>
   </ul>
@@ -102,6 +107,7 @@
     <li>Bakım Çemberi kayıtları: Paylaşımı uygulama içinden sonlandırabilirsiniz; kalan kayıtların silinmesini e-postayla talep edebilirsiniz.</li>
     <li>Geri bildirim metinleri: Talep üzerine silinir.</li>
   </ul>
+  <p>Etiket fotoğrafları sunucularımızda saklanmaz. Akıllı okuma modunda Google'a gönderilen içerik, Google'ın 4-b bölümünde bağlantısı verilen koşullarına tabidir.</p>
   <p>Sunucudaki verilerinizin silinmesini talep etmek için <a href="mailto:artcodens@gmail.com">artcodens@gmail.com</a> adresine e-posta gönderebilirsiniz. Silme talebiniz en geç 30 gün içinde işleme alınır.</p>
 
   <h2>10. Bu Gizlilik Politikasındaki Değişiklikler</h2>

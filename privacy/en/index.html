@@ -34,7 +34,7 @@
   <ul>
     <li><strong>Notifications and Alarms</strong> (including time-sensitive "Critical Alerts" and Live Activities): to show your medication reminders at the right time.</li>
     <li><strong>Camera:</strong> to read a medicine box barcode or a prescription/medicine label, and to scan Care Circle QR codes.</li>
-    <li><strong>Photos:</strong> to pick a label photo or a profile photo from your gallery.</li>
+    <li><strong>Photos:</strong> to pick a profile photo from your gallery.</li>
     <li><strong>Location:</strong> to show pharmacies near you on the map. Your location is used on your device and is not sent to our servers.</li>
     <li><strong>Tracking (iOS only):</strong> to ask whether you allow personalized ads (see Section 6).</li>
   </ul>
@@ -46,7 +46,12 @@
   <p>So that Live Activities and Critical Alerts can be shown even when the app is closed, only the device's anonymous push token, a random reminder ID and the dose time are temporarily sent to the server. <strong>The medication name is not sent to the server</strong>; the name shown in the notification is added on your device. These records are deleted automatically when the reminder ends.</p>
 
   <h3>b) Label Reading with the Camera</h3>
-  <p>When you scan a prescription or medicine label with the camera or from your gallery, the photo may in some cases be sent through our server to Google's Gemini AI service so that the text can be read correctly. This feature can only be used after you read this notice in the app and give your consent. The photo is not stored by us. Barcode scanning happens entirely on your device.</p>
+  <p>The first time you scan a prescription or medicine label with the camera, the app asks how the label should be read:</p>
+  <ul>
+    <li><strong>On device only:</strong> The photo never leaves your device; the text is read on your device and no data is sent to our server or to Google.</li>
+    <li><strong>Smart reading:</strong> Reading still starts on your device. When on-device reading is not enough (e.g. a stylized brand name, handwriting or a folded label), the photo is sent through our server to Google's Gemini AI service so that the text can be read correctly. This mode can only be used after you read this notice in the app and give your consent.</li>
+  </ul>
+  <p>Your choice is remembered; you can change it at any time at the top of the camera screen or under <em>Label reading</em> in the menu. You can withdraw your smart reading consent in the same place; after that, labels are read on your device only and no photo is sent. You can also add your medicine by hand without using the camera. The photo is not stored by us. Barcode scanning happens entirely on your device.</p>
   <p>We use this service under Google's unpaid (free) terms. Under these terms Google may use the submitted photos and the extracted text to provide, improve and develop its products and services (including AI models), and this content may be read by human reviewers at Google. For this reason, if the label shows your name, national ID number or prescription number, we recommend covering them before taking the photo. Details: <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Additional Terms of Service</a>.</p>
 
   <h3>c) Care Circle</h3>
@@ -76,7 +81,7 @@
   <ul>
     <li><strong>Supabase:</strong> server infrastructure (the data in Section 4).</li>
     <li><strong>Google AdMob:</strong> advertising (Section 6).</li>
-    <li><strong>Google Gemini:</strong> label reading; content may be used by Google to improve its services (4-b).</li>
+    <li><strong>Google Gemini:</strong> label reading, only in the smart reading mode you consent to; content may be used by Google to improve its services (4-b).</li>
     <li><strong>Firebase Cloud Messaging and Apple Push Notification service:</strong> delivering notifications.</li>
     <li><strong>OpenFreeMap:</strong> map images (4-d).</li>
   </ul>
@@ -102,6 +107,7 @@
     <li>Care Circle records: You can end sharing within the app; you can request deletion of any remaining records by email.</li>
     <li>Feedback messages: Deleted upon request.</li>
   </ul>
+  <p>Label photos are not stored on our servers. Content sent to Google in smart reading mode is subject to Google's terms linked in Section 4-b.</p>
   <p>To request the deletion of your data from our servers, please send an email to <a href="mailto:artcodens@gmail.com">artcodens@gmail.com</a>. Your deletion request will be processed within 30 days.</p>
 
   <h2>10. Changes To This Privacy Policy</h2>
